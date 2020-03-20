@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Seven</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+</head>
+<body>
+   
+    
+
+
+
+
+
+
+
+
+
+<script>                        
+// Task Seven Starts
+
+let userNumber = parseInt(prompt("This application prints out all prime numbers from the range of 20 to 100"))
+function checkprimenumber(n){
+    for (c=2; c<=n - 1; c++){
+    if ( n%c == 0 ){
+    return false;
+    }
+    return true;
+    }
+    }
+    
+    function printprimenumber(number){
+    if(checkprimenumber(number) == true){
+    document.write(`<center><h1>${number} is a Prime Number <h1/> </center>`);
+    }else{
+        document.write(`<center><h1>${number} is Not a Prime Number <h1/></center>`);
+    }
+    }
+    
+    function printnumbers(range){
+    for (i=1; i<=range; i++){
+    printprimenumber(i);
+    }
+    }
+    
+    var maxnumber = 100;
+    printnumbers(userNumber);
+
+
+
+
+// Task Seven Ends
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

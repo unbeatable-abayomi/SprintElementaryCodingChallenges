@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Six </title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+</head>
+<body>
+   
+    
+
+
+
+
+
+
+
+
+
+<script>                        
+// Task Six Starts
+
+
+let userNumber = parseInt(prompt('Hello, this application prints the multipilcation table for numbers from 1 to 12 ...Kindly Enter A Number between 1 and 12 Below'))
+if(userNumber === 0 || userNumber >12){
+    alert('Please enter a number between 1 and 12')
+}else{
+    let num = 1;
+
+    while(num <= 12){
+             document.write(`<center><h1>${userNumber} * ${num} = ${userNumber * num} </h1></center>`);
+             num++;
+         
+        }
+}
+
+
+
+// Task Six Ends
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

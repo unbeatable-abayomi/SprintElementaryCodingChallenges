@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Five </title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+</head>
+<body>
+   
+    
+
+
+
+
+
+
+
+
+
+<script>                        
+// Task Five Starts
+
+    let userNumber = parseInt(prompt('hello ...Kindly Enter A Number'))
+      let sum_or_product = prompt(`Would you want a series of the  sum 1 to ${userNumber} or the product of 1 to ${userNumber}. If Sum, kindly type 'Sum' in the input box below and if Product, type "Product" in the input box below`).toUpperCase();
+
+if (sum_or_product === 'SUM'){
+    let num = 1;
+
+ while(num <= userNumber){
+          document.write(`<center><h1>${userNumber} + ${num} = ${userNumber + num} </h1></center>`);
+          num++;
+       
+     }
+
+}else if(sum_or_product === 'PRODUCT'){
+    let num = 1;
+
+    while(num <= userNumber){
+             document.write(`<center><h1>${userNumber} * ${num} = ${userNumber * num} </h1></center>`);
+             num++;
+          
+        }
+
+}
+
+// Task Five Ends
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
