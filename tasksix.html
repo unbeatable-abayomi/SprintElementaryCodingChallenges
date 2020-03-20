@@ -8,6 +8,13 @@
 </head>
 <body>
    
+    <div class="jubmotron">
+        <div class="container">
+            <div class="row">
+                <h2>Below is the</h2>
+            </div>
+        </div>
+    </div>
     
 
 
@@ -22,18 +29,31 @@
 // Task Six Starts
 
 
-let userNumber = parseInt(prompt('Hello, this application prints the multipilcation table for numbers from 1 to 12 ...Kindly Enter A Number between 1 and 12 Below'))
-if(userNumber === 0 || userNumber >12){
-    alert('Please enter a number between 1 and 12')
-}else{
-    let num = 1;
+// let userNumber = parseInt(prompt('Hello, this application prints the multipilcation table for numbers from 1 to 12 ...Kindly Enter A Number between 1 and 12 Below'))
+// if(userNumber === 0 || userNumber >12){
+//     alert('Please enter a number between 1 and 12')
+// }else{
+//     let num = 1;
 
-    while(num <= 12){
-             document.write(`<center><h1>${userNumber} * ${num} = ${userNumber * num} </h1></center>`);
-             num++;
+//     while(num <= 12){
+//              document.write(`<center><h1>${userNumber} * ${num} = ${userNumber * num} </h1></center>`);
+//              num++;
          
-        }
-}
+//         }
+// }
+for(var i= 1; i <= 12; i++){
+      
+        
+            for(var num= 1; num <= 12; num++){
+    
+                    
+                document.write( `<h2><center>${i} * ${num}  =  ${num * i} </center></h2>`);
+               
+            }
+            
+            
+
+    }
 
 
 
