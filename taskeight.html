@@ -10,8 +10,9 @@
    
     <div class="jumbotron text-center">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <h2 class="text-center">Below is a list of Leap Year's for the next 20 years</h2>
+                <h3 class=" mt-4 text-center">Our current year is 2020</h3>
             </div>
         </div>
     </div>
@@ -36,9 +37,11 @@
     let year = 2020;
      let leap = 4;
 for(let i = 1; i <= 20; i++){
+    
     //   year += leap;
+    year+= leap;
       document.write(`<center><h1>${year} is a leap year .</h1></center><br>`);
-      year+= leap;
+     
 }
 
 // Task Eight Ends
