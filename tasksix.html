@@ -8,14 +8,15 @@
 </head>
 <body>
    
-    <div class="jubmotron">
-        <div class="container">
+   
+     
+    <div class="jumbotron text-center">
+        <div class="container mb-5">
             <div class="row">
-                <h2>Below is the</h2>
+                <h2 class="text-center">Below is the Multipilcation Table from 1 to 12</h2>
             </div>
         </div>
     </div>
-    
 
 
 
@@ -42,12 +43,12 @@
 //         }
 // }
 for(var i= 1; i <= 12; i++){
+    document.write(`<center><h1>Multiplication Table for No.${i}</h1><center>`)
       
-        
             for(var num= 1; num <= 12; num++){
     
                     
-                document.write( `<h2><center>${i} * ${num}  =  ${num * i} </center></h2>`);
+                document.write( `<h2><center>${i} * ${num}  =  ${num * i} </center></h2><br>`);
                
             }
             
